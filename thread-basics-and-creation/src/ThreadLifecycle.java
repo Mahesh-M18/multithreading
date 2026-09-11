@@ -1,18 +1,3 @@
-public class ThreadLifecycle {
-    public static void main(String[] args) {
-        MyTasks thread1 = new MyTasks();
-
-        System.out.println(thread1.getState());
-        System.out.println(thread1.isAlive());
-
-        thread1.start();
-
-        System.out.println(thread1.getState());
-        System.out.println(thread1.isAlive());
-
-    }
-}
-
 class MyTasks extends Thread {
 
     @Override
@@ -29,6 +14,21 @@ class MyTasks extends Thread {
             }
         }
         System.out.println(currentThread().getState());
+    }
+}
+
+public class ThreadLifecycle {
+    public static void main(String[] args) {
+        MyTasks thread1 = new MyTasks();
+
+        System.out.println(thread1.getState());
+        System.out.println(thread1.isAlive());
+
+        thread1.start();
+
+        System.out.println(thread1.getState());
+        System.out.println(thread1.isAlive());
+
     }
 }
 

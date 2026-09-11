@@ -1,17 +1,17 @@
+class Mythread extends Thread {
+    @Override
+    public void run() {
+        System.out.println("My thread is running");
+        System.out.println(Thread.currentThread().getName());
+    }
+}
+
 public class ThreadLearning {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName()); //main thread
 
         Mythread thread = new Mythread();
         thread.start();
-    }
-}
-
-class Mythread extends Thread{
-    @Override
-    public void run(){
-        System.out.println("My thread is running");
-        System.out.println(Thread.currentThread().getName());
     }
 }
 

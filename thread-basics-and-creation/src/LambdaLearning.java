@@ -1,6 +1,6 @@
 public class LambdaLearning {
     public static void main() {
-        Thread thread = new Thread(()->{
+        Thread thread = new Thread(() -> {
             System.out.println("Hello from thread");
             System.out.println(Thread.currentThread().getName());
         });

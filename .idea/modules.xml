@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/multithreading.iml" filepath="$PROJECT_DIR$/multithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/synchronization-and-thread-safety/synchronization-and-thread-safety.iml" filepath="$PROJECT_DIR$/synchronization-and-thread-safety/synchronization-and-thread-safety.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread-basics-and-creation/thread-basics-and-creation.iml" filepath="$PROJECT_DIR$/thread-basics-and-creation/thread-basics-and-creation.iml" />
     </modules>
   </component>

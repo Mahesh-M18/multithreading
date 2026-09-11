@@ -1,18 +1,18 @@
+class MyTask implements Runnable {
+    @Override
+    public void run() {
+        System.out.println("Task is Running");
+        System.out.println(Thread.currentThread().getName());
+    }
+
+}
+
 public class ThreadCreationLearning {
     public static void main(String[] args) {
         MyTask task = new MyTask();
         Thread thread = new Thread(task);
         thread.start();
     }
-}
-
-class MyTask implements Runnable{
-    @Override
-    public void run(){
-        System.out.println("Task is Running");
-        System.out.println(Thread.currentThread().getName());
-    }
-
 }
 
 /*
@@ -65,4 +65,12 @@ Understand how threads work
 Runnable
   ↓
 Understand task/thread separation
+
+| Runnable                                 | Callable                         |
+| ---------------------------------------- | -------------------------------- |
+| Doesn't return a result                  | Can return a result              |
+| `run()`                                  | `call()`                         |
+| Cannot directly throw checked exceptions | Can throw checked exceptions     |
+| Used for tasks without result            | Used when task produces a result |
+
  */
